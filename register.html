@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-image: url(login_bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        padding-top: 22px;
+        font-size: x-large;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .login {
+        width: 335px;
+        height: 510px;
+        position: relative;
+        top: 130px;
+        left: 190px;
+        border-radius: 20px;
+        box-shadow: -5px 5px 30px 2px #331515;
+    }
+
+    form {
+        margin-top: 50px;
+        margin-left: 20px;
+        font-size: 15px;
+        font-weight: 500;
+        display: grid;
+        gap: 7px;
+    }
+
+    input {
+        box-shadow: 1px 1px 6px 2px rgba(180, 115, 110, 90);
+        border-radius: 6px;
+        border: none;
+        border-bottom: 3px solid #fb828b;
+        padding: 7px;
+        font-size: small;
+        width: 60%;
+        font-weight: 600;
+        outline: none;
+        transition: width 0.4s ease-in-out;
+    }
+
+    input:hover {
+        width: 90%;
+        background-color: aliceblue;
+    }
+
+    .color {
+        border: none;
+        border-bottom: 3px solid #fea68e;
+    }
+
+    button {
+        border: none;
+        border-radius: 20px;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 5px 27px 5px 27px;
+        background-color: rgb(255, 166, 0);
+        color: aliceblue;
+        cursor: pointer;
+        transition-duration: 0.5s;
+        box-shadow: 1px 1px 6px 2px rgba(180, 115, 110, 90);
+    }
+
+    button:hover {
+        background-color: #fede9f;
+        color: rgb(62, 74, 74);
+    }
+
+    .btn {
+        padding: 5px;
+        display: flex;
+        margin-top: 25px;
+        justify-content: center;
+    }
+
+    span {
+        font-size: 15px;
+        font-weight: 600;
+        padding: 5px;
+        margin-top: 10px;
+        color: white;
+    }
+
+    .line {
+        width: 30%;
+        height: 2px;
+        background-color: white;
+        margin-top: 25px;
+    }
+
+    .signup {
+        display: flex;
+        justify-content: center;
+        opacity: 0.8;
+    }
+
+    h3 {
+        font-size: 17px;
+        color: white;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    u {
+        color: #141451;
+        font-weight: 700;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <section>
+        <div id="signupForm" class="login">
+            <header>Welcome, Adventurer! Dive into Your Anime Odyssey!</header>
+            <form action="" class="form">
+                <label for="name">Name </label>
+                <input type="text" name="name" id="name" placeholder="Enter Name " required/>
+                <label for="email">Email </label>
+                <input type="email" name="email" id="email" placeholder="email@info.com" required />
+                <label for="password">Password </label>
+                <input class="color" type="password" name="password" id="password" placeholder="Password" required />
+            </form>
+            <div class="btn">
+                <button type="submit">Sign Up</button>
+            </div>
+            <div class="signup">
+                <div class="line"></div><span>OR</span>
+                <div class="line"></div>
+            </div>
+            <a href="login.html"> <h3>Already have an account ? <u>Sign In</u></h3></a>
+        </div>
+
+</html>
